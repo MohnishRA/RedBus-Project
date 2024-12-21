@@ -1,6 +1,6 @@
 # GUVI-DS-RedBus-Project
 # Overview:
-Web-Scraping bus data from RedBus website using Selenium.
+Web-Scraping bus data from RedBus website ([https://www.redbus.in/](url))using Selenium.
 Storing it in MySQL (XAMPP Server - Local Host).
 Creating a Streamlit web application to view the bus details with filters and sortings.
 
