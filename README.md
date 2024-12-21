@@ -109,7 +109,7 @@ Store scraped bus details in MySQL database
         j. price: Decimal
         k. seats_available: Integer
 
-####The data is also saved as a bus_routes.csv file for backup.
+#### The data is also saved as a bus_routes.csv file for backup.
 
 
 # C) Bus_App.py Script Explanation:
