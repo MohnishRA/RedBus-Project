@@ -137,8 +137,7 @@ Establishes a connection to a XAMPP server - local MySQL database named 'bus_dat
   1. Sets the page layout to wide
   2. Adds “Bus Details” as title to the application
 
-### Sidebar Filters:
-### Location Selection:
+### Location Selection Filter:
   1. Provides dropdown menus for selecting "From" and "To" locations
   2. Dynamically updates "To" locations based on selected "From" location
 
@@ -166,7 +165,7 @@ Establishes a connection to a XAMPP server - local MySQL database named 'bus_dat
         c. Price range
   3. Applies selected sorting criteria
 
-### Results Display:
+### Display Results:
   1. Fetches query results
   2. Converts results to a pandas DataFrame
   3. If buses found it displays the results in a Streamlit dataframe.
