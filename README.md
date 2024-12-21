@@ -81,7 +81,7 @@ Extract detailed bus information from the current page
      f. Star ratings
      g. Prices
      h. Seat availabilities
-  2. Stores extracted information in final_details
+  3. Stores extracted information in final_details
 
 ### data_cleaning(df):
 Clean and process scraped data
@@ -163,7 +163,7 @@ Establishes a connection to a XAMPP server - local MySQL database named 'bus_dat
      a. Route name
      b. Departure time
      c. Price range
-  3. Applies selected sorting criteria
+  4. Applies selected sorting criteria
 
 ### Display Results:
   1. Fetches query results
