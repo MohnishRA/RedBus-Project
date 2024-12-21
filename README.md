@@ -1,10 +1,16 @@
 # GUVI-DS-RedBus-Project
-# Overview:
-Web-Scraping bus data from RedBus website ([https://www.redbus.in/](url))using Selenium.
-Storing it in MySQL (XAMPP Server - Local Host).
-Creating a Streamlit web application to view the bus details with filters and sortings.
 
-# Scraping_and_SQL.py script overview:
+# Content:
+    A) Overview
+    B) Scraping_and_SQL.py Script Explanation
+    C) Bus_App.py Script Explanation
+    
+# A) Overview:
+Web-Scraping bus data from redbus website ([https://www.redbus.in/](url)) using selenium and storing it in MySQL (XAMPP server - localhost).
+Creating a streamlit web application in a virtual environment to view the bus details with filters and sortings.
+
+
+# B) Scraping_and_SQL.py Script Explanation:
 This Python script is designed to scrape bus route and bus details from various state transport corporations websites through RedBus. The script uses Selenium WebDriver for web scraping, pandas for data manipulation, and MySQL for data storage.
 
 ## Python libraries:
@@ -104,3 +110,67 @@ Store scraped bus details in MySQL database
         k. seats_available: Integer
 
 ####The data is also saved as a bus_routes.csv file for backup.
+
+
+# C) Bus_App.py Script Explanation:
+This script is created in a virtual environment to run a streamlit web application with MySQL database. The application allows users to search for bus details with various filters and sorting options.
+
+## Libraries:
+  1. streamlit: Web application framework
+  2. mysql.connector: MySQL database connection library
+  3. pandas: Data manipulation library
+
+## Database Connection:
+Establishes a connection to a XAMPP server - local MySQL database named 'bus_data'. Creates a cursor object for executing SQL queries.
+
+## Route Location Extraction:
+### From Locations:
+  1. Extracts unique "From" locations from the route_name column.
+  2. Populates from_list with distinct starting locations
+     
+### To Locations:
+  1. For each "From" location, extracts corresponding "To" locations.
+  2. Creates a list of dictionaries mapping "From" locations to their possible "To" destinations
+
+## Streamlit Application Setup
+### Page Configuration:
+  1. Sets the page layout to wide
+  2. Adds “Bus Details” as title to the application
+
+### Sidebar Filters:
+### Location Selection:
+  1. Provides dropdown menus for selecting "From" and "To" locations
+  2. Dynamically updates "To" locations based on selected "From" location
+
+### Departure Time Filter:
+  1. Allows filtering buses by time of day
+  2. Converts selected time range to specific time boundaries
+
+### Price Range Slider:
+  1. Provides a slider to filter buses by price range
+  2. Default range is 0 to 8000 Rs.
+
+### Sorting Options:
+  1. Departure Time
+  2. Arrival Time
+  3. Duration
+  4. Price: low to high
+  5. Price: high to low
+  6. Rating
+
+### SQL Query Generation:
+  1. Generates a dynamic SQL query based on user-selected filters
+  2. Applies filters for:
+        a. Route name
+        b. Departure time
+        c. Price range
+  3. Applies selected sorting criteria
+
+### Results Display:
+  1. Fetches query results
+  2. Converts results to a pandas DataFrame
+  3. If buses found it displays the results in a Streamlit dataframe.
+  4. If buses not found it displays “No bus found for the given filters and sortings.”
+
+
+## Screenshots of the streamlit web-application also uploaded.
