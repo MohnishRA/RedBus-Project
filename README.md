@@ -73,14 +73,14 @@ Scroll to the bottom of the page to load all content
 ### elements(link, name):
 Extract detailed bus information from the current page
   1. Finds elements for bus details:
-        a. Bus names
-        b. Bus types
-        c. Departing times
-        d. Durations
-        e. Reaching times
-        f. Star ratings
-        g. Prices
-        h. Seat availabilities
+     a. Bus names
+     b. Bus types
+     c. Departing times
+     d. Durations
+     e. Reaching times
+     f. Star ratings
+     g. Prices
+     h. Seat availabilities
   2. Stores extracted information in final_details
 
 ### data_cleaning(df):
@@ -97,17 +97,17 @@ Store scraped bus details in MySQL database
   2. Creates bus_routes table if not exists
   3. Inserts bus details into the table
   4. Database Schema:
-        a. id: Auto-incrementing primary key
-        b. route_name: Text
-        c. route_link: Text
-        d. busname: Text
-        e. bustype: Text
-        f. departing_time: Time
-        g. duration: Text
-        h. reaching_time: Time
-        i. star_rating: Float
-        j. price: Decimal
-        k. seats_available: Integer
+     a. id: Auto-incrementing primary key
+     b. route_name: Text
+     c. route_link: Text
+     d. busname: Text
+     e. bustype: Text
+     f. departing_time: Time
+     g. duration: Text
+     h. reaching_time: Time
+     i. star_rating: Float
+     j. price: Decimal
+     k. seats_available: Integer
 
 #### The data is also saved as a bus_routes.csv file for backup.
 
@@ -160,9 +160,9 @@ Establishes a connection to a XAMPP server - local MySQL database named 'bus_dat
 ### SQL Query Generation:
   1. Generates a dynamic SQL query based on user-selected filters
   2. Applies filters for:
-        a. Route name
-        b. Departure time
-        c. Price range
+     a. Route name
+     b. Departure time
+     c. Price range
   3. Applies selected sorting criteria
 
 ### Display Results:
