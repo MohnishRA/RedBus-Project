@@ -158,7 +158,7 @@ def elements(link, name):
                     "departing_time": all_departing_times[i].text,
                     "duration": all_durations[i].text,
                     "reaching_time": all_reaching_times[i].text,
-                    "star_rating": all_star_ratings[i].text if i < len(all_star_ratings) else '0',
+                    "star_rating": all_star_ratings[i].text,
                     "price": all_prices[i].text,
                     "seats_available": all_seat_availabilities[i].text
                 }
@@ -186,6 +186,7 @@ def data_cleaning(df):
         df['seats_available'] = df['seats_available'].astype(int)
         df['seats_available'] = df['seats_available'].fillna(0)
         df['star_rating'] = df['star_rating'].astype(float)
+        df['star_rating'] = df['star_rating'].fillna(0)
         return df
     except Exception as e:
         print(f"data_cleaning Error: {e}")
