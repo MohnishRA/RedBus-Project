@@ -217,9 +217,9 @@ def inserting_mysql(details):
             departing_time TIME,
             duration TEXT NOT NULL,
             reaching_time TIME,
-            star_rating FLOAT NULL,
-            price DECIMAL(10,2) NULL,
-            seats_available INT NULL
+            star_rating FLOAT,
+            price DECIMAL(10,2) NOT NULL,
+            seats_available INT
         )
         """)
 
