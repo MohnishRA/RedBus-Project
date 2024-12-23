@@ -13,7 +13,7 @@ database='bus_data',
 mycursor = mydb.cursor(buffered=True)
 
 # extracting from and to locations from route_name        
-mycursor.execute("SELECT DISTINCT SUBSTRING_INDEX(route_name, ' ', 1) FROM bus_routes") # extracting from and to from route_name 
+mycursor.execute("SELECT DISTINCT SUBSTRING_INDEX(route_name, ' to ', 1) FROM bus_routes") # extracting from and to from route_name 
 from_list = ['']
 combination = []
 
