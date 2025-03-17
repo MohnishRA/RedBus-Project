@@ -3,7 +3,7 @@
 This project scrapes bus details, preprocesses the data, stores it in a database using SQL, and provides an interactive streamlit application for users to filter and view bus information.
 
 ## Features:
-1. **Bus_Details_Scraping** - Scrapes bus route details and saves them as a CSV file.
+1. **RedBus_Details_Scraping** - Scrapes bus route details and saves them as a CSV file.
 2. **Data_Preprocessing** - Cleans and processes the scraped.
 3. **SQL** - Stores the processed data in a MySQL database.
 4. **App** - Provides a Streamlit-based UI to explore bus details interactively.
@@ -20,7 +20,7 @@ This project scrapes bus details, preprocesses the data, stores it in a database
 ## Usage
 ### Step 1: Run the Scraper
 ```sh
-python Bus_Details_Scraping.py
+python RedBus_Details_Scraping.py
 ```
 This will generate a CSV file with bus route details.
 
