@@ -1,4 +1,4 @@
-# Bus Details Scraping
+# Red Bus Details Scraping
 
 This project scrapes bus details, preprocesses the data, stores it in a database using SQL, and provides an interactive streamlit application for users to filter and view bus information.
 
