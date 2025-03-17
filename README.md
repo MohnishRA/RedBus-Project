@@ -1,6 +1,6 @@
 # Bus Details Scraping
 
-This project scrapes bus details, preprocesses the data, stores it in a database using SQL, and provides an interactive application for users to filter and view bus information.
+This project scrapes bus details, preprocesses the data, stores it in a database using SQL, and provides an interactive streamlit application for users to filter and view bus information.
 
 ## Features:
 1. **Bus_Details_Scraping** - Scrapes bus route details and saves them as a CSV file.
@@ -15,7 +15,7 @@ This project scrapes bus details, preprocesses the data, stores it in a database
   ```sh
   pip install selenium pandas mysql-connector-python streamlit
   ```
-**NOTE:** streamlit script 'app.py' should be run in a virtual environment. In the virtual environment install streamlit, mysql-connector-python, pandas and run the script.
+**NOTE:** Streamlit App script 'app.py' should be run in a virtual environment. In the virtual environment install streamlit, mysql-connector-python, pandas and run the script.
 
 ## Usage
 ### Step 1: Run the Scraper
