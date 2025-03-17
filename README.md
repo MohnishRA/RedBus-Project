@@ -26,7 +26,7 @@ This will generate a CSV file with bus route details.
 
 ### Step 2: Data Preprocessing
 Open `Data_Preprocessing.ipynb` in Jupyter Notebook and run all cells to clean the data.
-**NOTE:** You need to look at bus type as it may change.
+**NOTE:** You need to look at the bus type as it may change.
 
 ### Step 3: Load Data into MySQL
 Run the SQL scripts in `SQL.ipynb` to create the necessary database and import the processed data.
